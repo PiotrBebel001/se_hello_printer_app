@@ -5,3 +5,7 @@ install:
   - make deps
 script:
   - make test
+deploy:
+  provider: heroku
+  app: morning-lowlands-41115
+  api_key: ${HEROKU_API_KEY}
